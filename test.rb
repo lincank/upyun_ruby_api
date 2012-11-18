@@ -1,12 +1,12 @@
 # encoding: utf-8
 load  "./upyun.rb"
 
-u = UpYun.new('空间名','用户名','密码', up_auth=true)
+u = UpYun.new('图片空间','用户名','密码', up_auth=true)
 
 
-data = File.open("/tmp/code.jpg", "r")
+data = File.open("upyun.gif", "r")
 
-img = "/test/ruby.jpg"
+img = "/test/upyun.gif"
 res = u.write_file(img, data, true)
 #res = u.deleteFile("/code.jpg")
 
